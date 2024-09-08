@@ -6,7 +6,7 @@ import { faChartLine, faGlobe, faLightbulb } from '@fortawesome/free-solid-svg-i
 const Home = () => {
   return (
     <div className="home">
-      <img src="https://www.ifourtechnolab.com/pics/tech-solutions-for-modern-businesses-the-impact-of-it-in-2024.webp" alt="Home Img" class="styled-image" />
+      <img src="path-to-your-img" alt="Home Img" class="styled-image" />
 
       {/* Home Hero Section */}
       <section className="home-hero-bar">
@@ -117,7 +117,7 @@ const Home = () => {
       {/* Digital Marketing Section */}
       <div className="digital-marketing-section">
         <div className="digital-marketing-image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfLoZIDoOALk5pUwzQqcXUsDAr-4FylDtKQ&s" alt="Digital Marketing" />
+          <img src="" alt="Digital Marketing" />
         </div>
         <div className="digital-marketing-text">
           <h2>Digital Marketing</h2>
