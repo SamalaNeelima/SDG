@@ -75,7 +75,7 @@ const ServicesGrid = () => (
         <Sidebar /> {/* Render Sidebar component */}
       </div>
     </div>
-    <Footer /> {/* Render Footer component */}
+    <Footer /> {/*Render Footer component*/}
   </>
 );
 
