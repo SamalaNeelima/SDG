@@ -3,225 +3,138 @@
 /* General body styling */
 body {
   font-family: 'Poppins', sans-serif; /* Set the font style */
-  font-size: 16px; /* Set the base font size */
-  line-height: 1.6; /* Set the line height */
-  color: #24272C; /* Set the text color */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Line height */
+  color: #24272C; /* Text color */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
-  width: 100%; /* Set body width to 100% */
+  box-sizing: border-box; /* Include padding and border in total width/height */
+  width: 100%; /* Full width */
 }
 
-/* Styling for all heading elements */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  color: #24272C; /* Set the color for all headings */
+  color: #24272C; /* Heading color */
 }
 
-/* Styling for all anchor tags */
+/* Anchor (link) styling */
 a {
-  color: #3DB166; /* Set the primary color for links */
-  text-decoration: none; /* Remove underline from links */
+  color: #3DB166; /* Primary color for links */
+  text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-  text-decoration: underline; /* Underline links on hover */
+  text-decoration: underline; /* Underline on hover */
 }
 
-/* Styling for breadcrumbs */
+/* Breadcrumbs */
 .breadcrumbs {
   display: flex;
-  justify-content: center; /* Center align breadcrumbs */
-  position: relative; /* Set position to relative */
-  transform: translateX(-15%); /* Centering adjustment */
-  width: 70%; /* Set the width */
-  text-align: center; /* Center the text */
-  height: 250px; /* Set the height */
+  justify-content: center; /* Center breadcrumbs */
+  width: 70%; /* Width adjustment */
+  height: 250px; /* Set height */
+  text-align: center;
+  margin: 0 auto;
 }
 
-/* Styling for services page */
+/* Services page styling */
 .services-page {
-  width: 100%; /* Set the width to 100% */
-  padding-top: 5%; /* Add padding to the top */
-  padding-bottom: 5%; /* Add padding to the bottom */
+  width: 100%;
+  padding: 5% 0; /* Vertical padding */
 }
 
 /* Flex container for content */
 .content {
-  display: flex; /* Use flexbox layout */
-  flex-wrap: wrap; /* Allow content to wrap */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Styling for services list */
+/* Services list */
 .services-list {
-  flex: 3; /* Set flex grow to 3 */
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
-  gap: 5px; /* Gap between grid items */
-  margin-left: 3%; /* Add margin to the left */
-  width: 80%; /* Set width to 80% */
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 5px; /* Space between items */
+  margin-left: 3%;
+  width: 80%;
 }
 
-/* Styling for sidebar */
+/* Sidebar styling */
 .sidebar {
-  flex: 1; /* Set flex grow to 1 */
-  margin-left: 5px; /* Add margin to the left */
+  flex: 1;
+  margin-left: 5px;
 }
 
-/* Styling for contact section */
+/* Contact section */
 .contact {
-  background-color: #3DB166; /* Set primary color */
-  color: #F2F2F2; /* Set text color */
-  padding: 20px; /* Add padding */
-  border-radius: 8px; /* Rounded corners */
-  text-align: center; /* Center align text */
-  margin-bottom: 20px; /* Add margin to the bottom */
+  background-color: #3DB166;
+  color: #F2F2F2;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Styling for testimonial and news sections */
+/* Testimonial and news sections */
 .testimonial, .news {
-  background-color: #F2F2F2; /* Set background color */
-  padding: 20px; /* Add padding */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  margin-bottom: 20px; /* Add margin to the bottom */
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-/* Responsive Styling */
+/* Responsive styling */
 @media (max-width: 1200px) {
-  .services-page {
-    width: 80%; /* Adjust width */
-  }
-
-  .breadcrumbs {
-    left: 15%; /* Adjust position */
-  }
-
   .services-list {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-  }
-}
-
-@media (max-width: 1030px) {
-  .services-page {
-    width: 100%; /* Set width to 100% */
-  }
-
-  .breadcrumbs {
-    left: 15%; /* Adjust position */
-  }
-
-  .services-list {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
   }
 }
 
 @media (max-width: 992px) {
-  .services-page {
-    width: 100%; /* Set width to 100% */
-  }
-
-  .breadcrumbs {
-    left: 15%; /* Adjust position */
-  }
-
   .services-list {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    width: 80%; /* Adjust width */
-    margin-left: 15%; /* Center align services list */
-    margin-right: 15%; /* Center align services list */
-  }
-}
-
-@media (max-width: 830px) {
-  .services-page {
-    width: 100%; /* Set width to 100% */
-  }
-
-  .breadcrumbs {
-    left: 15%; /* Adjust position */
-  }
-
-  .services-list {
-    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-    width: 80%; /* Adjust width */
-    margin-left: 15%; /* Center align services list */
-    margin-right: 15%; /* Center align services list */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    width: 80%;
+    margin: 0 auto; /* Center align */
   }
 }
 
 @media (max-width: 768px) {
   .services-list {
-    grid-template-columns: 1fr; /* One card per row */
-    width: 100%; /* Adjust width */
-    margin-left: 15%; /* Center align services list */
-    margin-right: 15%; /* Center align services list */
+    grid-template-columns: 1fr; /* One column */
+    width: 100%;
+    margin: 0 auto;
   }
 
   .breadcrumbs {
-    justify-content: center; /* Center align breadcrumbs */
-    padding: 10px; /* Add padding */
-    position: relative; /* Set position to relative */
-    transform: translateX(0); /* Remove centering adjustment */
-    width: 100%; /* Set width to 100% */
-    text-align: center; /* Center align text */
+    width: 100%; /* Full width */
+    padding: 10px;
   }
 
   .sidebar {
-    width: 100%; /* Set width to 100% */
-    margin-left: 0; /* Remove margin */
+    width: 100%; /* Full width */
+    margin: 0;
   }
 }
 
 @media (max-width: 576px) {
   .services-list {
-    width: 70%; /* Adjust width */
-    margin-left: 15%; /* Center align services list */
-    margin-right: 15%; /* Center align services list */
-  }
-
-  .sidebar {
-    width: 100%; /* Set width to 100% */
-    margin-left: 0; /* Remove margin */
-  }
-
-  .services-page {
-    width: 100%; /* Set width to 100% */
-    padding: 10px; /* Add padding */
+    width: 70%;
+    margin: 0 auto;
   }
 
   .breadcrumbs {
-    justify-content: center; /* Center align breadcrumbs */
-    padding: 10px; /* Add padding */
-    position: relative; /* Set position to relative */
-    transform: translateX(0); /* Remove centering adjustment */
-    width: 80%; /* Adjust width */
-    text-align: center; /* Center align text */
+    width: 80%;
   }
 }
 
 @media (max-width: 480px) {
   .services-list {
-    width: 70%; /* Adjust width */
-    margin-left: 15%; /* Center align services list */
-    margin-right: 15%; /* Center align services list */
-  }
-
-  .sidebar {
-    width: 100%; /* Set width to 100% */
-    margin-left: 0; /* Remove margin */
-  }
-
-  .services-page {
-    width: 100%; /* Set width to 100% */
-    padding: 10px; /* Add padding */
+    width: 70%;
+    margin: 0 auto;
   }
 
   .breadcrumbs {
-    justify-content: center; /* Center align breadcrumbs */
-    padding: 10px; /* Add padding */
-    position: relative; /* Set position to relative */
-    transform: translateX(0); /* Remove centering adjustment */
-    width: 100%; /* Set width to 100% */
-    text-align: center; /* Center align text */
+    width: 100%;
   }
 }
